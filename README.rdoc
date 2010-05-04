@@ -1,6 +1,6 @@
 = Kestrel Open Graph (kog)
 
-This is a Ruby implementation of the OpenGraph protocol outlined by Facebook in {The Open Graph Protocol}[http://opengraphprotocol.org].  More information can be found here: {kog: A Ruby implementation of the Facebook Open Graph protocol}[http://johnwyles.com/2010/05/04/kog-a-ruby-implementation-of-the-facebook-open-graph-protocol/].
+This is a Ruby implementation of the OpenGraph protocol outlined by Facebook in {The Open Graph Protocol}[http://opengraphprotocol.org].  More information can be found here: {kog: A Ruby implementation of The Open Graph Protocol by Facebook}[http://johnwyles.com/2010/05/04/kog-a-ruby-implementation-of-the-open-graph-protocol-by-facebook/].
 
 == Install
 
