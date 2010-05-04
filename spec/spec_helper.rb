@@ -1,9 +1,10 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
-$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
-require 'kog'
+$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib', 'kog'))
+
+require 'fakeweb'
+
 require 'spec'
 require 'spec/autorun'
 
-Spec::Runner.configure do |config|
-  
+Spec::Runner.configure do |config|  
 end
