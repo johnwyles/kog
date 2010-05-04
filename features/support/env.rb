@@ -1,4 +1,12 @@
-$LOAD_PATH.unshift(File.dirname(__FILE__) + '/../../lib')
-require 'kog'
+# Cucumber
+require 'cucumber/formatter/unicode'
+$KCODE = 'u' unless Cucumber::RUBY_1_9
 
-require 'spec/expectations'
+# Fakeweb
+require 'fakeweb'
+
+# rSpec
+require File.expand_path(File.dirname(__FILE__) + "/../../spec/spec_helper")
+
+# Kestrel_OpenGraph
+require 'kog'

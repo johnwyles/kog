@@ -1,6 +1,27 @@
-= kog
+= Kestrel Open Graph (kog)
 
-Description goes here.
+This is a Ruby implementation of the OpenGraph protocol outlined by Facebook in {The Open Graph Protocol}[http://opengraphprotocol.org].  More information can be found here: {kog: A Ruby implementation of the Facebook Open Graph protocol}[http://johnwyles.com/2010/05/04/kog-a-ruby-implementation-of-the-facebook-open-graph-protocol/].
+
+== Install
+
+    sudo gem install kog
+
+== Usage
+
+    require 'rubygems'
+    require 'kog'
+
+    # Parse a resource and getting the resource
+    obj = OpenGraph::Parser.parse('http://www.rottentomatoes.com/m/office_space/')
+    puts obj.class # => OpenGraph::Object
+
+    # The object
+    puts obj.inspect # => #<OpenGraph::Object:0x101b01060 @image="http://images.rottentomatoes.com/images/movie/custom/aa/1087856aa.jpg", @title="Office Space", @url="http://www.rottentomatoes.com/m/office_space/", @site_name="Rotten Tomatoes", @type="movie">
+
+    # Accessors
+    puts obj.type # => movie
+    puts obj.type?('movie').inspect # => true
+    puts obj.type?('dog').inspect # => false
 
 == Note on Patches/Pull Requests
  
@@ -12,6 +33,12 @@ Description goes here.
   (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
 * Send me a pull request. Bonus points for topic branches.
 
+== Credits
+
+* John Wyles: Author
+* Michael Bleigh: This project was loosely based off of Michael's original Ruby implementation
+
 == Copyright
 
 Copyright (c) 2010 John Wyles. See LICENSE for details.
+
